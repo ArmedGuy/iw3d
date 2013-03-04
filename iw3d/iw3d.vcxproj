@@ -91,7 +91,6 @@
     <ClCompile Include="PatchCoD4_Console.cpp" />
     <ClCompile Include="PatchCoD4_GuidValidation.cpp" />
     <ClCompile Include="PatchCoD4_Auth.cpp" />
-    <ClCompile Include="PatchCoD4_Misc.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>

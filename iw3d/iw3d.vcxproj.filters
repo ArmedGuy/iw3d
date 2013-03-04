@@ -45,9 +45,6 @@
     <ClCompile Include="PatchCoD4_Auth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PatchCoD4_Misc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdinc.h">
