@@ -2,7 +2,7 @@
 // iw3d project
 //
 // File: PatchCoD4_GuidValidation.cpp
-// Purpose: Validates player guids(0-9a-f)[32], VERY useful when authentication server isn't being used.
+// Purpose: Validates player guids[0-9a-f]{32}, VERY useful when authentication server isn't being used.
 //
 // Initial author: ArmedGuy
 // ==========================================================
