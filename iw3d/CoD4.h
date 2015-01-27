@@ -125,6 +125,13 @@ extern Dvar_FindVar_t _Dvar_FindVar;
 dvar_t* Dvar_FindVar(char* name);
 
 
+typedef void (__cdecl * SV_SendServerCommand_t)(void*, const char*, ...);
+extern SV_SendServerCommand_t SV_SendServerCommand;
+
+typedef void(__cdecl * Cmd_ExecuteSingleCommand_t)(int, const char*, ...);
+extern Cmd_ExecuteSingleCommand_t Cmd_ExecuteSingleCommand;
+
+
 typedef bool (__cdecl * NET_StringToAdr_t)(netadr_t*);
 bool NET_StringToAdr(const char* address, netadr_t* adr);
 extern NET_StringToAdr_t NET_StringToAdr_CoD4;
