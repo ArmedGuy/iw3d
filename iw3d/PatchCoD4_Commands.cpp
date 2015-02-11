@@ -13,6 +13,9 @@
 CallHook hKickHook;
 CallHook hRemoteKickHook;
 
+DWORD pKickCommand = 0x52802E;
+DWORD pRemoteKickCommand = 0x52817B;
+
 void KickCommandHook(char d1, char d2)
 {
 	Com_Printf(0, "Usage: kick <player> [reason]\n");
@@ -20,9 +23,9 @@ void KickCommandHook(char d1, char d2)
 
 void PatchCoD4_Commands()
 {
-	hKickHook.initialize(0x52802E, KickCommandHook);
+	hKickHook.initialize(pKickCommand, KickCommandHook);
 	hKickHook.installHook();
 
-	hRemoteKickHook.initialize(0x52817B, KickCommandHook);
+	hRemoteKickHook.initialize(pRemoteKickCommand, KickCommandHook);
 	hRemoteKickHook.installHook();
 }
